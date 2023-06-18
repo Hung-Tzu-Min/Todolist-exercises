@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+<head>
+    <mata charset="UTF-8" />
+    <title>ToDoList第二次練習</title>
+</head>
+
+<body>
+    <h1>小眼狐狸的第二次To do list</h1>
+    <br />
+    <input id="searchButton" type="button" style="font-size: 40px;" value="搜尋" />
+    <input id="cancelSearchButton" type="button" style="font-size: 40px; display:none ;" value="取消" />
+    <input id="searchInputBox" type="text" placeholder="搜尋過往行程" />
+    <span>起始日期：</span><input id="searchInputBoxDateStart" type="date" />
+    <span>結束日期：</span><input id="searchInputBoxDateEnd" type="date" />
+    <br /><br />
+    <input id="addButton" type="button" style="font-size: 40px;" value="新增" />
+    <input id="saveButton" type="button" style="font-size:40px; display:none ; " value="儲存">
+    <br />
+    <p>出遊日期</p><input id="date" type="date">
+    <br />
+    <p>交通工具</p><input id="transportation" type="text">
+    <br />
+    <p>行程說明</p><input id="directions" type="text">
+    <br />
+    <p>花費</p><input id="amount" type="text" onkeyup="this.value=this.value.replace(/\D/g,'')">
+
+
+    <table style="margin-left: 200px; ;margin-right: auto; margin-top: -250px; ;">
+        <thead>
+            <tr>
+                <th colspan="1">出遊日期</th>
+                <th>交通工具</th>
+                <th>行程說明</th>
+                <th>花費</th>
+            </tr>
+        </thead>
+        <tbody id="form">
+
+        </tbody>
+    </table>
+
+</body>
+
+<script src="secondToDoList.js"></script>
+
+</html>
